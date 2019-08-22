@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Albums</title>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles/style.css" rel='stylesheet' type='text/css' />
+
+    <script src="js/jquery-2.1.4.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="goToLang()">Language & Genre</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">
+                <strong>
+                    <span style="color:rgb(174, 101, 241)">Planet</span>
+                    <span style="color:yellow">M</span>
+                </strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item searchSong">
+                    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src=""
+                            alt="Avatar" class="small" id="nav-img">
+                        <span id="myUsername"></span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="profile.html">My Profile</a>
+                        <a class="dropdown-item" id="logout" href="#">Sign Out</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <div id="page-wrapper">
+
+        <div class="inner-content">
+
+            <div class="music-left">
+                <!--banner-section-->
+                <div class="banner-section">
+
+                    <div class="banner">
+                        <div class="callbacks_container">
+                            <ul class="rslides callbacks callbacks1" id="slider4">
+                                <li id="callbacks1_s0" class=""
+                                    style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out 0s;">
+                                    <div class="banner-img">
+                                        <img src="images/11.webp" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="banner-info">
+                                        <a class="trend" href="single.html">TRENDING</a>
+                                        <h3>Let Your Home</h3>
+                                        <p>Album by <span>Rock star</span></p>
+                                    </div>
+
+                                </li>
+                                <li id="callbacks1_s1" class=""
+                                    style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out 0s;">
+                                    <div class="banner-img">
+                                        <img src="images/22.webp" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="banner-info">
+                                        <a class="trend" href="single.html">TRENDING</a>
+                                        <h3>Charis Brown feet</h3>
+                                        <p>Album by <span>Rock star</span></p>
+                                    </div>
+
+
+                                </li>
+                                <li id="callbacks1_s2" class="callbacks1_on"
+                                    style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out 0s;">
+                                    <div class="banner-img">
+                                        <img src="images/33.webp" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="banner-info">
+                                        <a class="trend" href="single.html">TRENDING</a>
+                                        <h3>Let Your Home</h3>
+                                        <p>Album by <span>Rock star</span></p>
+                                    </div>
+
+
+                                </li>
+
+                        </div>
+                        <!--banner-->
+                        <script src="js/responsiveslides.min.js"></script>
+                        <script>
+                            // You can also use "$(window).load(function() {"
+                            $(function () {
+                                // Slideshow 4
+                                $("#slider4").responsiveSlides({
+                                    auto: true,
+                                    pager: true,
+                                    nav: true,
+                                    speed: 500,
+                                    namespace: "callbacks",
+                                    before: function () {
+                                        $('.events').append("<li>before event fired.</li>");
+                                    },
+                                    after: function () {
+                                        $('.events').append("<li>after event fired.</li>");
+                                    }
+                                });
+
+                            });
+                        </script>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <!--//End-banner-->
+                <!--albums-->
+                <!-- pop-up-box -->
+                <link href="styles/popuo-box.css" rel="stylesheet" type="text/css" media="all">
+                <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+                <script>
+                    $(document).ready(function () {
+                        $('.popup-with-zoom-anim').magnificPopup({
+                            type: 'inline',
+                            fixedContentPos: false,
+                            fixedBgPos: false,
+                            overflowY: 'auto',
+                            closeBtnInside: false,
+                            preloader: false,
+                            midClick: true,
+                            removalDelay: 300,
+                            mainClass: 'my-mfp-zoom-in'
+                        });
+                    });
+                </script>
+                <!--//pop-up-box -->
+                <div class="albums">
+                    <div class="tittle-head">
+                        <h3 class="tittle">New Releases <span class="new">New</span></h3>
+                        <a href="index.html">
+                            <h4 class="tittle">See all</h4>
+                        </a>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="songs"></div>
+                    <div class="songs"></div>
+                    <div class="songs"></div>
+                    <div class="songs"></div>
+                    <div class="songs col-md-3 content-grid" song-id=1>
+                        <a class=" play-icon popup-with-zoom-anim " href="#small-dialog"><img src="images/v1.webp"
+                                title="allbum-name"></a>
+                        <a class=" button play-icon popup-with-zoom-anim  " href="#small-dialog">Hamma hamma
+                        </a>
+                    </div>
+                    <div id="small-dialog" class="mfp-hide">
+
+                        <iframe src="index.html"></iframe>
+                    </div>
+                    <div class="songs col-md-3 content-grid">
+                        <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v2.webp"
+                                title="allbum-name"></a>
+
+                        <a class="button play-icon popup-with-zoom-anim" href="#small-dialog">kaho na kaho</a>
+                    </div>
+                    <div class="col-md-3 content-grid">
+                        <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v3.webp"
+                                title="allbum-name"></a>
+
+                        <a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+                    </div>
+                    <div class="col-md-3 content-grid last-grid">
+                        <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v4.webp"
+                                title="allbum-name"></a>
+
+                        <a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+                    </div>
+                    <div class="col-md-3 content-grid">
+                        <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v5.webp"
+                                title="allbum-name"></a>
+
+                        <a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+                    </div>
+                    <div class="col-md-3 content-grid">
+                        <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v6.webp"
+                                title="allbum-name"></a>
+
+                        <a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+                    </div>
+                    <div class="col-md-3 content-grid">
+                        <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v7.webp"
+                                title="allbum-name"></a>
+
+                        <a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+                    </div>
+                    <div class="col-md-3 content-grid last-grid">
+                        <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><img src="images/v8.webp"
+                                title="allbum-name"></a>
+                        <a class="button play-icon popup-with-zoom-anim" href="#small-dialog">Listen now</a>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+                <!--//End-albums-->
+                <!--//discover-view-->
+                <div class="tittle-head">
+                    <h3 class="tittle">Recently Played Songs <span class="new">New</span></h3>
+                    <a href="index.html">
+                        <h4 class="tittle">See all</h4>
+                    </a>
+                    <div class="clearfix"> </div>
+                    <div class="col-md-12 content-grid">
+
+                    </div>
+                </div>
+                <div class="albums second">
+                    <div class="tittle-head">
+                        <h3 class="tittle">Discover <span class="new">View</span></h3>
+                        <a href="index.html">
+                            <h4 class="tittle two">See all</h4>
+                        </a>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="col-md-3 content-grid">
+                        <a href="pages/pop.html"><img src="images/v11.webp" title="allbum-name"></a>
+                        <div class="inner-info"><a href="pages/pop.html">
+                                <h5>Pop</h5>
+                            </a></div>
+                    </div>
+                    <div class="col-md-3 content-grid">
+                        <a href="single.html"><img src="images/v22.webp" title="allbum-name"></a>
+                        <div class="inner-info"><a href="single.html">
+                                <h5>Pop</h5>
+                            </a></div>
+                    </div>
+                    <div class="col-md-3 content-grid">
+                        <a href="single.html"><img src="images/v33.webp" title="allbum-name"></a>
+                        <div class="inner-info"><a href="single.html">
+                                <h5>Pop</h5>
+                            </a></div>
+                    </div>
+                    <div class="col-md-3 content-grid last-grid">
+                        <a href="single.html"><img src="images/v44.webp" title="allbum-name"></a>
+                        <div class="inner-info"><a href="single.html">
+                                <h5>Pop</h5>
+                            </a></div>
+                    </div>
+                    <div class="col-md-3 content-grid">
+                        <a href="single.html"><img src="images/v55.webp" title="allbum-name"></a>
+                        <div class="inner-info"><a href="single.html">
+                                <h5>Pop</h5>
+                            </a></div>
+                    </div>
+                    <div class="col-md-3 content-grid">
+                        <a href="single.html"><img src="images/v66.webp" title="allbum-name"></a>
+                        <div class="inner-info"><a href="single.html">
+                                <h5>Pop</h5>
+                            </a></div>
+                    </div>
+                    <div class="col-md-3 content-grid">
+                        <a href="single.html"><img src="images/v11.webp" title="allbum-name"></a>
+                        <div class="inner-info"><a href="single.html">
+                                <h5>Pop</h5>
+                            </a></div>
+                    </div>
+                    <div class="col-md-3 content-grid last-grid">
+                        <a href="single.html"><img src="images/v22.webp" title="allbum-name"></a>
+                        <div class="inner-info"><a href="single.html">
+                                <h5>Pop</h5>
+                            </a></div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/func.js"></script>
+    <script src="js/maping.js"></script>
+</body>
+</html>

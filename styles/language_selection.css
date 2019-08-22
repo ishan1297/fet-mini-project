@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+body {
+  width: 100%;
+  max-width: 100%;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.container {
+  margin-top: 15px;
+}
+
+.navbar {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-item {
+  padding-left: 55px;
+  padding-right: 10px;
+}
+
+.navbar-brand {
+  font-size: 26px;
+}
+
+a {
+  color: white;
+}
+
+.dropdown a {
+  text-decoration: none;
+}
+
+.dropdown strong {
+  color: white;
+}
+
+li.dropdown {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row .header h1 {
+  font-family: "Font Name", "Tangerine";
+  text-align: center;
+}
+
+.form input {
+  display: none;
+}
+
+.form .plan input:checked+label {
+  border: 3px solid #333;
+  background-color: #2fcc71;
+}
+
+.form input:checked+label:after {
+  content: "✓";
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 100%;
+  border: 2px solid #333;
+  background-color: #2fcc71;
+  z-index: 999;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.form label {
+  position: relative;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  height: 150px;
+  width: 25%;
+  display: block;
+  float: left;
+  margin: 20px;
+  line-height: 150px;
+  cursor: pointer;
+  border: 3px solid black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  justify-content: center;
+  width: 100%;
+}
+
+.rock-label {
+  background-image: url("../images/rock.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.pop-label {
+  background-image: url("../images/jazz.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.romance-label {
+  background-image: url("../images/romance.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.party-label {
+  background-image: url("../images/party.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.edm-label {
+  background-image: url("../images/edm.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.workout-label {
+  background-image: url("../images/workout.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.english-label {
+  background-image: url("../images/english.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.dutch-label {
+  background-image: url("../images/dutch.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.french-label {
+  background-image: url("../images/french.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.hindi-label {
+  background-image: url("../images/hindi.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.gujarati-label {
+  background-image: url("../images/gujarati.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.marathi-label {
+  background-image: url("../images/marathi.webp");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.submit {
+  padding: 15px 60px;
+  display: inline-block;
+  border: none;
+  margin: 20px 0;
+  background-color: #2fcc71;
+  color: #fff;
+  border: 2px solid #333;
+  font-size: 18px;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.submit:hover {
+  cursor: pointer;
+  transform: rotateX(360deg);
+}
+
+@media only screen and (max-width: 768px) {
+  [class*="col-sm-12"] {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=language_selection.css.map */

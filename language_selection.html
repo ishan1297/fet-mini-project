@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Langugage Selection Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/language_selection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body background="images/lang3.webp">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">
+                <strong>
+                    <span style="color:rgb(174, 101, 241)">Planet</span>
+                    <span style="color:yellow">M</span>
+                </strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="dropdown">
+                    <strong> Welcome,
+                        <span id="myUsername"></span>
+                    </strong>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form id="myForm" class="form cf" method="POST">
+
+        <div class="container">
+            <div class="row">
+                <h1><strong>Choose Your Language</strong></h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="lang" id="english" value="English"><label class="english-label"
+                        for="english">English</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="lang" id="french" value="French" checked><label class="french-label"
+                        for="french">French</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="lang" id="marathi" value="Marathi"><label class="marathi-label"
+                        for="marathi">Marathi</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="lang" id="hindi" value="Hindi"><label class="hindi-label"
+                        for="hindi">Hindi</label></div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="lang" id="dutch" value="Dutch"><label class="dutch-label"
+                        for="dutch">Dutch</label></div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="lang" id="gujarati" value="Gujarati"><label class="gujarati-label"
+                        for="gujarati">Gujarati</label></div>
+            </div>
+            <div class="row">
+                <h1><strong>Choose your favourite Genre</strong></h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="genre" id="rock" value="Rock"><label class="rock-label"
+                        for="rock">Rock</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="genre" id="pop" value="Pop" checked><label class="pop-label"
+                        for="pop">Pop</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="genre" id="romance" value="Romance"><label class="romance-label"
+                        for="romance">Romance</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="genre" id="party" value="Party"><label class="party-label"
+                        for="party">Party</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="genre" id="edm" value="Edm"><label class="edm-label"
+                        for="edm">EDM</label>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <input type="checkbox" name="genre" id="workout" value="Workout"><label class="workout-label"
+                        for="workout">Workout</label>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn save submit btn-success" onclick="album()" form="myForm">Submit Details</button>
+            </div>
+        </div>
+    </form>
+    <script src="js/language_selection.js"></script>
+</body>
