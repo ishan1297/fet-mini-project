@@ -56,18 +56,12 @@ function check(input) {
     input.setCustomValidity("");
   }
 }
-
-
-
 var currUser = JSON.parse(localStorage.getItem(localStorage.getItem('currentUser')));
-console.log(currUser.fname);
 document.getElementById("fname").value = currUser.fname;
-console.log(currUser.fname);
 document.getElementById("lname").value = currUser.lname;
 document.getElementById("number").value = currUser.number;
 document.getElementById("email").value = currUser.email;
 document.getElementById("rpassword").value = currUser.password;
-
 function save() {
   //event.preventDefault();
   console.log("hi " + currUser.fname);
@@ -75,13 +69,11 @@ function save() {
   var lname = document.getElementById("lname").value;
   var number = document.getElementById("number").value;
   var email = document.getElementById("email").value;
-  // var password = document.getElementById("rpassword").value;
-  var password = currUser.password;
+  var password = document.getElementById("rpassword").value;
+
+  console.log("hiiiii");
   var status = currUser.status;
   var languageAndGenre= currUser.languageAndGenre;
-  
-
-
   let user = {
 
     fname: fname,
@@ -90,8 +82,6 @@ function save() {
     number: number,
     password: password,
     status: status,
-    genre: genre,
-    language: language,
     languageAndGenre: languageAndGenre
 
 
