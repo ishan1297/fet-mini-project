@@ -35,7 +35,7 @@ function passCheck() {
 
 //function to check for unique email
 function uniqueEmail() {
-  var i = 0;
+  let i = 0;
   let counterNumber = 0;
   let email = $('#email').val();
 
