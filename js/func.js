@@ -9,13 +9,13 @@ $(document).ready(function () {
 
 document.getElementById("nav-img").src = "./images/profile/1.webp";
 document.getElementById("logout").addEventListener("click", function () {
-localStorage.setItem("currentUser", JSON.stringify(0));
-window.location.replace("homepage.html")});
+    localStorage.setItem("currentUser", JSON.stringify(0));
+    window.location.replace("homepage.html")
+});
 
-
-function goToLang(){
+function goToLang() {
     return window.open("language_selection.html", "_self");
 }
 
-var name=JSON.parse( localStorage.getItem(localStorage.getItem("currentUser"))).fname;
-document.getElementById("myUsername").innerHTML=name;
+var name = JSON.parse(localStorage.getItem(localStorage.getItem("currentUser"))).fname;
+document.getElementById("myUsername").innerHTML = name;
