@@ -10,7 +10,7 @@ $(document).ready(function () {
 document.getElementById("nav-img").src = "./images/profile/1.webp";
 document.getElementById("logout").addEventListener("click", function () {
     localStorage.setItem("currentUser", JSON.stringify(0));
-    window.location.replace("homepage.html")
+    window.location.replace("login_register.html")
 });
 
 function goToLang() {

@@ -35,12 +35,6 @@ button {
   width: 150px;
 }
 
-/* .nav-item .nav-link {
-  color: white;
-  font-size: larger;
-  font-weight: 700;
-} */
-
 .navbar {
   font-size: larger;
   font-weight: 600;
@@ -63,9 +57,16 @@ a {
   color: white;
 }
 
-
 .dropdown a{
   text-decoration: none;
+}
+
+.title #planet {
+  color: rgb(174, 101, 241);
+}
+
+.title #m {
+  color: yellow;
 }
 
 .centered {
@@ -199,21 +200,6 @@ a {
   color: #fff;
   background-color: #53A3CD;
   border-color: #53A3CD;
-}
-
-.forgot-password {
-  text-decoration: underline;
-  color: #888;
-}
-
-.forgot-password:hover {
-  text-decoration: underline;
-  color: #666;
-}
-
-.forgot-password:focus {
-  text-decoration: underline;
-  color: #666;
 }
 
 .btn-register {

@@ -9,6 +9,7 @@ $(document).ready(function () {
 
             values = JSON.parse(values);
 
+            // get value of all checked checkboxes
             $('input:checkbox:checked').each(function () {
                 checkBoxArray.push($(this).val());
             });
@@ -19,24 +20,12 @@ $(document).ready(function () {
     });
 });
 
-function goToHomepage() {
-    let currentUser = localStorage.getItem("currentUser");
-
-    currentUser = 0;
-    localStorage.setItem("currentUser", currentUser);
-
-    return window.open("./homepage.html", "_self");
-}
-
+// go to album page
 function album() {
     event.preventDefault();
-
-    return window.open("./album.html", "_self");
+    return window.open('./album.html', '_self');
 }
 
-var name = JSON.parse(localStorage.getItem(localStorage.getItem("currentUser"))).fname;
-
-console.log("name" + name);
-
-document.getElementById("myUsername").innerText = name;
-document.getElementById("nav-img").src = "images/profile/1.webp";
+// display user's first name and photo
+var name = JSON.parse(localStorage.getItem(localStorage.getItem('currentUser'))).fname;
+document.getElementById('myUsername').innerText = name;

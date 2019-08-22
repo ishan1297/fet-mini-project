@@ -2,14 +2,16 @@
 
 <head>
     <title>Planet M</title>
+
+    <!-- Bootstrap version 4 cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <!-- jquery validation plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-    <!-- to store login information using cookies for remember me -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
     <link rel="stylesheet" href="styles/login_register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/login_register.js"></script>
@@ -18,28 +20,27 @@
 <body>
     <div class="container-fluid">
 
+        <!-- Top Navbar -->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
                 </ul>
             </div>
-
             <div class="mx-auto order-0">
-                <a class="navbar-brand mx-auto" href="#">
+                <a class="navbar-brand mx-auto title" href="#">
                     <strong>
-                        <span style="color:rgb(174, 101, 241)">Planet</span>
-                        <span style="color:yellow">M</span>
+                        <span id="planet">Planet</span>
+                        <span id="m">M</span>
                     </strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="navbar-nav ml-auto">
                     <li class="dropdown">
-                        <a href="album.html">
+                        <a href="album.html" onclick="guestUser()">
                             <i class="fa fa-user" aria-hidden="true"></i>
                             <strong>Continue as Guest</strong>
                         </a>
@@ -48,7 +49,9 @@
             </div>
         </nav>
 
+        <!-- background image -->
         <img src="images/homepage.jpg" alt="homepage iamge">
+
         <div class="centered">
             <h1>PlanetM</h1>
             <h2>The world of Music on A Click</h2>
@@ -61,6 +64,7 @@
         <div class="modal fade" id="login">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
+
                     <!-- Modal Header -->
                     <div class="modal-header">
                         <h4 class="modal-title">Login</h4>
@@ -105,6 +109,7 @@
         <div class="modal fade" id="register">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
+
                     <!-- Modal Header -->
                     <div class="modal-header">
                         <h4 class="modal-title">Register</h4>

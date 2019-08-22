@@ -1,6 +1,6 @@
 var currentuser = localStorage.getItem("currentUser");
 if (currentuser == 0) {
-    window.location.replace("homepage.html");
+    window.location.replace("login_register.html");
 }
 var i = 0;
 if (localStorage.length == 0) {
@@ -17,7 +17,7 @@ if (localStorage.length == 0) {
     document.getElementById("nav-img").src = "images/profile/1.webp";
     document.getElementById("logout").addEventListener("click", function () {
         localStorage.setItem("currentUser", JSON.stringify(0));
-        window.location.replace("homepage.html");
+        window.location.replace("login_register.html");
     });
 }
 

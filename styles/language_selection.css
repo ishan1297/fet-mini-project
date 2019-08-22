@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+li.dropdown {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .container {
   margin-top: 15px;
 }
@@ -43,9 +48,12 @@ a {
   color: white;
 }
 
-li.dropdown {
-  padding-left: 40px;
-  padding-right: 40px;
+.title #planet {
+  color: rgb(174, 101, 241);
+}
+
+.title #m {
+  color: yellow;
 }
 
 .row {
@@ -101,76 +109,69 @@ li.dropdown {
   width: 100%;
 }
 
-.rock-label {
-  background-image: url("../images/rock.webp");
+.rock-label,
+.pop-label,
+.romance-label,
+.party-label,
+.edm-label,
+.workout-label,
+.english-label,
+.dutch-label,
+.french-label,
+.hindi-label,
+.marathi-label,
+.gujarati-label {
   background-size: cover;
   opacity: 0.7;
+}
+
+.rock-label {
+  background-image: url("../images/rock.webp");
+
 }
 
 .pop-label {
   background-image: url("../images/jazz.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .romance-label {
   background-image: url("../images/romance.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .party-label {
   background-image: url("../images/party.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .edm-label {
   background-image: url("../images/edm.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .workout-label {
   background-image: url("../images/workout.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .english-label {
   background-image: url("../images/english.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .dutch-label {
   background-image: url("../images/dutch.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .french-label {
   background-image: url("../images/french.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .hindi-label {
   background-image: url("../images/hindi.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .gujarati-label {
   background-image: url("../images/gujarati.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .marathi-label {
   background-image: url("../images/marathi.webp");
-  background-size: cover;
-  opacity: 0.7;
 }
 
 .submit {
