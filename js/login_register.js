@@ -1,8 +1,44 @@
+//check Name validation
+function checkName() {
+  let fname = $('#fname').val();
+  let lname = $('#lname').val();
+
+  //check for first name
+  if(fname.length<3 || fname.length>25) {
+    document.getElementById('fname').setCustomValidity('Name should be 3-25 character only');
+  }
+  else {
+    document.getElementById('fname').setCustomValidity('');
+  }
+
+  //check for last name
+  if(lname.length<3 || lname.length>25) {
+    document.getElementById('lname').setCustomValidity('Name should be 3-25 character only');
+  }
+  else {
+    document.getElementById('lname').setCustomValidity('');
+  }
+}
+
+//check for password validation
+function passCheck() {
+  let password = $('#rpassword').val();
+
+  //check for password
+  if(password.length<5 || password.length>25) {
+    document.getElementById('rpassword').setCustomValidity('Password should be 5-25 character only');
+  }
+  else {
+    document.getElementById('rpassword').setCustomValidity('');
+  }
+}
+
 //function to check for unique email
 function uniqueEmail() {
   var i = 0;
   let counterNumber = 0;
   let email = $('#email').val();
+
   for (i = 0; i < localStorage.length; i++) {
     let itemkey = localStorage.key(i);
     let values = localStorage.getItem(itemkey);
@@ -25,11 +61,13 @@ function uniqueEmail() {
 function uniqueNumber() {
   let counterNumber = 0;
   let number = $('#number').val();
+  
   for (var i = 0; i < localStorage.length; i++) {
     let itemkey = localStorage.key(i);
     let values = localStorage.getItem(itemkey);
 
     values = JSON.parse(values);
+
     if (number == values.number) {
       counterNumber++;
     }
@@ -41,7 +79,6 @@ function uniqueNumber() {
     document.getElementById("number").setCustomValidity('');
   }
 }
-
 
 //validate password and confirm-password match
 function check(input) {
@@ -94,7 +131,7 @@ function login() {
   let password = $('#password').val();
   let loginAttempt = 0;
   if (localStorage.length == 0) {
-    console.log("No entries in local storage");
+    alert("No entries in local storage");
   } else {
     for (i = 0; i < localStorage.length; i++) {
       let itemkey = localStorage.key(i);

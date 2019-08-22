@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="styles/login_register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
 </head>
 
 <body>
@@ -120,11 +120,11 @@
                         <form id="register-form" name="register-form" onsubmit="register()" method="POST" role="form">
                             <div class="form-group">
                                 <input type="text" name="fname" id="fname" tabindex="1" class="form-control"
-                                    placeholder="First Name" pattern="[A-Za-z]{3,25}" value="" required autofocus>
+                                    placeholder="First Name" onkeyup="checkName()" value="" required autofocus>
                             </div>
                             <div class="form-group">
                                 <input type="text" name="lname" id="lname" tabindex="1" class="form-control"
-                                    placeholder="Last Name" pattern="[A-Za-z]{3,25}" value="" required>
+                                    placeholder="Last Name" onkeyup="checkName()" value="" required>
                             </div>
                             <div class="form-group">
                                 <input type="email" name="email" id="email" tabindex="1" class="form-control"
@@ -132,13 +132,13 @@
                             </div>
                             <div class="form-group">
                                 <input type="text" name="number" id="number" tabindex="1" class="form-control"
-                                    placeholder="Contact Number" pattern="[7-9][0-9]{9}" oninput="uniqueNumber()"
-                                    value="" required>
+                                    placeholder="Contact Number" pattern="[7-9][0-9]{9}"
+                                    oninvalid="this.setCustomValidity('Please enter a valid 10 digit number only')"
+                                    oninput="uniqueNumber()" value="" required>
                             </div>
                             <div class="form-group">
                                 <input type="password" name="rpassword" id="rpassword" tabindex="2" class="form-control"
-                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
-                                    placeholder="Password" required>
+                                    onkeyup="passCheck()" placeholder="Password" required>
                             </div>
                             <div class="form-group">
                                 <input type="password" name="confirm_password" id="confirm_password" tabindex="2"
