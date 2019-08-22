@@ -154,7 +154,7 @@ function login() {
       return window.open('./language_selection.html', '_self');
     } 
     else {
-      alert("Login Failure");
+      alert("Invalid Credentials");
     }
   }
 }

@@ -5,18 +5,10 @@
     <title>User profile page</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap version 4 CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="styles/profile.css">
@@ -26,51 +18,45 @@
 
 <body class="profile-page">
     <!--navbar-->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                    <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                    <a class="nav-link" href="#" onclick="goToAlbum()">Songs</a>
-                                </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" onclick="goToLang()">Language & Genre</a>
-                        </li>
-                    </ul>
-                </div>
-        
-                <div class="mx-auto order-0">
-                    <a class="navbar-brand mx-auto" href="#">
-                        <strong>
-                            <span style="color:rgb(174, 101, 241)">Planet</span>
-                            <span style="color:yellow">M</span>
-                        </strong>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="goToAlbum()">Songs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="goToLang()">Language & Genre</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">
+                <strong>
+                    <span style="color:rgb(174, 101, 241)">Planet</span>
+                    <span style="color:yellow">M</span>
+                </strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src=""
+                            alt="Avatar" class="small" id="nav-img">
+                        <span id="myUsername"></span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-        
-                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                    <ul class="navbar-nav ml-auto">
-                        <!-- <li class="nav-item searchSong">
-                            <input class="form-control" id="myInput" type="text" placeholder="Search..">
-                        </li> -->
-                        <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src=""
-                                    alt="Avatar" class="small" id="nav-img">
-                                <span id="myUsername"></span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="profile.html">My Profile</a>
-                                <a class="dropdown-item" id="logout" href="#">Sign Out</a>      
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        
-<!--page content-->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="profile.html">My Profile</a>
+                        <a class="dropdown-item" id="logout" href="#">Sign Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <!--page content-->
     <div class="page-header header-filter" style="background-image:url('images/background.jpg');">
     </div>
     <div class="main main-raised">
@@ -89,9 +75,7 @@
                 <div class="row">
                     <div class="col-md-6 ml-auto mr-auto">
                         <form class="form" method="post" id="registrationForm">
-
                             <div class="form-group">
-
                                 <div class="col-lg-6">
                                     <label for="first_name">
                                         <h4 id="first_name">First name : </h4>
@@ -99,7 +83,6 @@
                                 </div>
                             </div>
                             <div class="form-group">
-
                                 <div class="col-lg-6">
                                     <label for="last_name">
                                         <h4 id="last_name">Last name : </h4>
@@ -115,7 +98,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                            <div class="col-lg-12">
+                                <div class="col-lg-12">
                                     <label for="email">
                                         <h4 id="email">Email : </h4>
                                     </label>

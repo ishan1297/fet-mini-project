@@ -1,3 +1,9 @@
+//if current user is 0
+var currentuser = localStorage.getItem("currentUser");
+if (currentuser == 0) {
+  window.location.replace("login_register.html");
+}
+
 //append user's language and genre selection
 $(document).ready(function () {
     $('.save').click(function () {

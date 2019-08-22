@@ -1,7 +1,9 @@
+
 var currentuser = localStorage.getItem("currentUser");
 if (currentuser == 0) {
     window.location.replace("login_register.html");
 }
+// for retrieving data in localstorage
 var i = 0;
 if (localStorage.length == 0) {
     console.log("No entries in local storage");
@@ -20,14 +22,13 @@ if (localStorage.length == 0) {
         window.location.replace("login_register.html");
     });
 }
-
+//for Username changes
 var name=JSON.parse( localStorage.getItem(localStorage.getItem("currentUser"))).fname;
 document.getElementById("myUsername").innerHTML=name;
-
+//for redirecting
 function goToAlbum() {
     return window.open("album.html", "_self");
 }
-
 function goToLang() {
     return window.open("language_selection.html", "_self");
 }
