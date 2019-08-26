@@ -11,7 +11,6 @@ $(document).ready(function () {
             let itemkey = localStorage.key(i);
             let values = localStorage.getItem(itemkey);
             let checkBoxArray = [];
-            let radioButtonArray = [];
 
             values = JSON.parse(values);
 
