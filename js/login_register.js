@@ -112,8 +112,7 @@ function register() {
     password: password,
     status: status,
     language: language,
-    genre: genre,
-    languageAndGenre: languageAndGenre
+    genre: genre
   };
 
   try {
