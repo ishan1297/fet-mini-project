@@ -101,7 +101,8 @@ function register() {
   let number = $("#number").val();
   let password = $("#rpassword").val();
   let status = 0;
-  let languageAndGenre = [];
+  let language = [];
+  let genre = [];
 
   user = {
     fname: fname,
@@ -110,6 +111,8 @@ function register() {
     number: number,
     password: password,
     status: status,
+    language: language,
+    genre: genre,
     languageAndGenre: languageAndGenre
   };
 
